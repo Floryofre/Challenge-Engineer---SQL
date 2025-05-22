@@ -10,7 +10,8 @@ VALUES
 (4, 'luis.martinez@mail.com', 'Luis', 'Martínez', 'M', 'Calle 123', '1980-06-15', '1155667788'),
 (5, 'carla.lopez@mail.com', 'Carla', 'López', 'F', 'Av. Central 456', '1988-08-20', '1166778899'),
 (6, 'pablo.diaz@mail.com', 'Pablo', 'Díaz', 'M', 'Calle 789', '1992-09-25', '1177889900'),
-(7, 'laura.morales@mail.com', 'Laura', 'Morales', 'F', 'Av. Siempre Viva 300', '1991-03-30', '1199001122');
+(7, 'laura.morales@mail.com', 'Laura', 'Morales', 'F', 'Av. Siempre Viva 300', '1991-03-30', '1199001122'),
+(8, 'usuario.hoy@mail.com','Florencia','Yofre','F','Calle Dinámica 999',CAST(GETDATE() AS DATE),'1100000000');
 
 
 SELECT * FROM Customer;
@@ -30,7 +31,7 @@ SELECT * FROM Category;
 
 INSERT INTO Item (id_item, titulo, id_seller, id_category, precio, estado, fecha_baja)
 VALUES
-(1, 'iPhone 12', 1, 1, 1000.00, 'activo', NULL),
+(1, 'iPhone 12', 8, 1, 1000.00, 'activo', NULL), 
 (2, 'Samsung Galaxy S21', 1, 1, 900.00, 'activo', NULL),
 (3, 'Notebook HP', 3, 2, 1200.00, 'pausado', '2023-12-01'),
 (4, 'Xiaomi Redmi Note 10', 4, 1, 700.00, 'activo', NULL),
@@ -56,7 +57,8 @@ VALUES
 (9, 4, '2020-04-01'),
 (10, 5, '2020-04-15'),
 (11, 6, '2020-05-10'),
-(12, 7, '2020-05-25');
+(12, 7, '2020-05-25'),
+(13, 8, '2020-01-15');
 
 SELECT * FROM Orders;
 
@@ -76,7 +78,8 @@ VALUES
 (9, 7, 4, 750.00),  -- Laura vende 4 OnePlus en abr 2020
 (10, 5, 3, 650.00), -- Carla vende 3 Motorola en abr 2020
 (11, 6, 2, 800.00), -- Pablo vende 2 Huawei en may 2020
-(12, 7, 1, 750.00); -- Laura vende 1 OnePlus en may 2020
+(12, 7, 1, 750.00), -- Laura vende 1 OnePlus en may 2020
+(13, 1, 2, 1000.00); -- Florencia vende 2 iPhones = 2000$
 
 SELECT * FROM Order_Item;
 
