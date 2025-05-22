@@ -1,3 +1,4 @@
+![ruta_o_url_de_la_imagen](https://github.com/Floryofre/Challenge-Engineer---SQL/blob/main/Banner%20de%20LinkedIn%20Lugar%20de%20Trabajo%20Ordenado%20(2).jpg)
 # Proyecto de Análisis de Ventas
 
 ## Descripción
