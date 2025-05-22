@@ -8,7 +8,7 @@ Este proyecto consiste en la creación y poblamiento de una base de datos para a
 
 ## Tecnologías utilizadas
 
-- SQL Server Management Studio / Azure Data Studio
+- SQL Server Management Studio 
 
 ---
 
